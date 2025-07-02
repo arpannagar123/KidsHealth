@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Children's Health Hub - Your Guide to Kid's Well-being</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+            color: #334155; /* Slate-700 for main text */
+            line-height: 1.6;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #cbd5e1; /* Light gray track */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #64748b; /* Medium gray thumb */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569; /* Darker gray on hover */
+        }
+        .section-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .section-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 767px) {
+            .container {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+            .text-5xl { /* Hero title */
+                font-size: 3rem;
+            }
+            .text-4xl { /* Section titles */
+                font-size: 2.5rem;
+            }
+            .text-3xl { /* Nav title */
+                font-size: 2rem;
+            }
+            .text-2xl { /* Hero subtitle, card titles */
+                font-size: 1.5rem;
+            }
+            .text-xl { /* Nav links, hero button */
+                font-size: 1.125rem;
+            }
+            .text-lg { /* Paragraphs */
+                font-size: 1rem;
+            }
+            .space-x-6 > li {
+                margin-left: 0 !important; /* Reset horizontal spacing */
+                margin-top: 0.5rem; /* Add vertical spacing */
+            }
+            .flex-wrap-nav {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .hero-section {
+                padding: 2rem; /* Reduce padding on mobile */
+            }
+            .grid-cols-1, .md\:grid-cols-2, .lg\:grid-cols-4 {
+                grid-template-columns: 1fr; /* Stack cards on mobile */
+            }
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-md py-4 sticky top-0 z-50 rounded-b-lg">
+        <nav class="container mx-auto px-4 flex flex-col sm:flex-row justify-between items-center">
+            <a href="index.html" class="text-3xl font-bold text-blue-600 rounded-md p-2 hover:bg-blue-50 transition duration-300 mb-2 sm:mb-0">
+                <span class="text-green-500">Kids</span>Health
+            </a>
+            <ul class="flex flex-wrap justify-center space-x-4 sm:space-x-6">
+                <li><a href="index.html" class="text-blue-600 hover:text-blue-600 font-medium transition duration-300 rounded-md p-2 bg-blue-50">Home</a></li>
+                <li><a href="nutrition.html" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300 rounded-md p-2 hover:bg-gray-100">Nutrition</a></li>
+                <li><a href="vaccinations.html" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300 rounded-md p-2 hover:bg-gray-100">Vaccinations</a></li>
+                <li><a href="development.html" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300 rounded-md p-2 hover:bg-gray-100">Development</a></li>
+                <li><a href="common-illnesses.html" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300 rounded-md p-2 hover:bg-gray-100">Illnesses</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        <!-- Hero Section -->
+        <section class="hero-section bg-gradient-to-r from-blue-500 to-green-500 text-white p-16 rounded-xl shadow-lg mb-12 text-center">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-4 leading-tight">
+                Your Trusted Guide to Children's Health
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 opacity-90 max-w-3xl mx-auto">
+                Empowering parents and caregivers with reliable, evidence-based information to nurture happy, healthy, and thriving children from infancy through adolescence.
+            </p>
+            <a href="#topics" class="inline-block bg-white text-blue-700 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition duration-300 transform hover:scale-105">
+                Explore Key Topics
+            </a>
+        </section>
+
+        <!-- Key Topics Section -->
+        <section id="topics" class="bg-white p-10 rounded-xl shadow-lg mb-12">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-10">Key Health Topics</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Nutrition Card -->
+                <a href="nutrition.html" class="block bg-blue-50 p-6 rounded-lg shadow-sm border border-blue-200 text-center section-card">
+                    <img src="pexels-alex-green-5692220.jpg" alt="Nutrition Icon" class="mx-auto mb-4 w-24 h-24 object-contain">
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-2">Nutrition</h3>
+                    <p class="text-gray-600">Discover balanced diets, healthy recipes, and practical tips for managing picky eaters to ensure optimal growth.</p>
+                </a>
+
+                <!-- Vaccinations Card -->
+                <a href="vaccinations.html" class="block bg-green-50 p-6 rounded-lg shadow-sm border border-green-200 text-center section-card">
+                    <img src="pexels-pavel-danilyuk-7653328.jpg" alt="Vaccination Icon" class="mx-auto mb-4 w-24 h-24 object-contain">
+                    <h3 class="text-2xl font-semibold text-green-700 mb-2">Vaccinations</h3>
+                    <p class="text-gray-600">Understand essential immunization schedules, the science behind vaccines, and their critical role in public health.</p>
+                </a>
+
+                <!-- Development Card -->
+                <a href="development.html" class="block bg-purple-50 p-6 rounded-lg shadow-sm border border-purple-200 text-center section-card">
+                    <img src="pexels-polesietoys-32747061.jpg" alt="Development Icon" class="mx-auto mb-4 w-24 h-24 object-contain">
+                    <h3 class="text-2xl font-semibold text-purple-700 mb-2">Development</h3>
+                    <p class="text-gray-600">Track key physical, cognitive, and social-emotional milestones from birth through early childhood.</p>
+                </a>
+
+                <!-- Common Illnesses Card -->
+                <a href="common-illnesses.html" class="block bg-red-50 p-6 rounded-lg shadow-sm border border-red-200 text-center section-card">
+                    <img src="pexels-mart-production-7641227.jpg" alt="Illness Icon" class="mx-auto mb-4 w-24 h-24 object-contain">
+                    <h3 class="text-2xl font-semibold text-red-700 mb-2">Common Illnesses</h3>
+                    <p class="text-gray-600">Learn about symptoms, effective home care remedies, and when to seek professional medical attention.</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Our Mission Section -->
+        <section class="bg-white p-10 rounded-xl shadow-lg mb-12">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">Our Mission</h2>
+            <div class="max-w-3xl mx-auto text-center text-lg text-gray-700">
+                <p class="mb-4">
+                    At Children's Health Hub, our mission is to provide clear, concise, and evidence-based information to help parents and caregivers make informed decisions about their children's health. We believe that access to reliable health knowledge is fundamental to raising healthy and thriving children.
+                </p>
+                <p>
+                    Our content is carefully curated and reviewed by a team of experts to ensure accuracy and relevance, covering a wide range of topics from infancy through adolescence. We are committed to being a trustworthy and comprehensive resource in your parenting journey, supporting you every step of the way.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 text-center rounded-t-lg">
+        <div class="container mx-auto px-4">
+            <p class="text-lg mb-2">&copy; 2025 Children's Health Hub. All rights reserved.</p>
+            <ul class="flex justify-center space-x-6 text-sm">
+                <li><a href="#" class="hover:text-blue-400 transition duration-300">Privacy Policy</a></li>
+                <li><a href="#" class="hover:text-blue-400 transition duration-300">Terms of Service</a></li>
+                <li><a href="#" class="hover:text-blue-400 transition duration-300">Disclaimer</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

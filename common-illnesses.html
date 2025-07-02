@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Common Illnesses - Children's Health Hub</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+            color: #334155; /* Slate-700 for main text */
+            line-height: 1.6;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #cbd5e1; /* Light gray track */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #64748b; /* Medium gray thumb */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569; /* Darker gray on hover */
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 767px) {
+            .container {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+            .text-4xl {
+                font-size: 2.5rem; /* Slightly smaller for mobile */
+            }
+            .text-3xl {
+                font-size: 2rem;
+            }
+            .text-lg {
+                font-size: 1rem;
+            }
+            .space-x-6 > li {
+                margin-left: 0 !important; /* Reset horizontal spacing */
+                margin-top: 0.5rem; /* Add vertical spacing */
+            }
+            .flex-wrap-nav {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-md py-4 sticky top-0 z-50 rounded-b-lg">
+        <nav class="container mx-auto px-4 flex flex-col sm:flex-row justify-between items-center">
+            <a href="index.html" class="text-3xl font-bold text-blue-600 rounded-md p-2 hover:bg-blue-50 transition duration-300 mb-2 sm:mb-0">
+                <span class="text-green-500">Kids</span>Health
+            </a>
+            <ul class="flex flex-wrap justify-center space-x-4 sm:space-x-6">
+                <li><a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300 rounded-md p-2 hover:bg-gray-100">Home</a></li>
+                <li><a href="nutrition.html" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300 rounded-md p-2 hover:bg-gray-100">Nutrition</a></li>
+                <li><a href="vaccinations.html" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300 rounded-md p-2 hover:bg-gray-100">Vaccinations</a></li>
+                <li><a href="development.html" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300 rounded-md p-2 hover:bg-gray-100">Development</a></li>
+                <li><a href="common-illnesses.html" class="text-blue-600 hover:text-blue-600 font-medium transition duration-300 rounded-md p-2 bg-blue-50">Illnesses</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        <section class="bg-white p-10 rounded-xl shadow-lg mb-12">
+            <h1 class="text-4xl font-bold text-center text-gray-800 mb-8">Common Childhood Illnesses</h1>
+            <div class="prose max-w-none text-lg text-gray-700">
+                <p class="mb-6">
+                    Children, especially young ones, often catch common illnesses as their immune systems are still developing. Understanding these common ailments can help parents provide appropriate care and know when to seek medical attention. This guide provides an overview of typical symptoms, effective home care strategies, and crucial indicators for when professional medical advice is necessary.
+                </p>
+
+                <img src="pexels-mart-production-7641227.jpg" alt="Sick Child" class="w-full rounded-lg shadow-md mb-8">
+
+                <h2 class="text-3xl font-semibold text-blue-600 mb-4">The Common Cold</h2>
+                <p class="mb-4">
+                    The common cold is a viral infection of the nose and throat, caused by many different viruses. It's very common in children, especially those in daycare or school, and typically resolves on its own.
+                </p>
+                <ul class="list-disc list-inside space-y-2 mb-6 ml-4">
+                    <li>Symptoms: Runny or stuffy nose (clear, then thicker and colored mucus), sneezing, sore throat, mild cough, sometimes a low-grade fever, and general tiredness.</li>
+                    <li>Home Care: Encourage plenty of rest, ensure adequate fluid intake (water, clear broths), use saline nasal drops or spray to clear nasal passages, and a cool-mist humidifier can help ease congestion. Avoid over-the-counter cold medicines for children under 6 without consulting a doctor.</li>
+                    <li>When to Call Doctor: High fever (especially in infants under 3 months), difficulty breathing or rapid breathing, persistent ear pain, extreme fussiness or unusual drowsiness, symptoms worsening or not improving after several days.</li>
+                </ul>
+
+                <h2 class="text-3xl font-semibold text-blue-600 mb-4">Influenza (Flu)</h2>
+                <p class="mb-4">
+                    The flu is a contagious respiratory illness caused by influenza viruses. It can be more severe than a common cold, leading to serious complications like pneumonia, especially in young children and those with underlying health conditions.
+                </p>
+                <ul class="list-disc list-inside space-y-2 mb-6 ml-4">
+                    <li>**Symptoms:** Sudden onset of high fever, body aches, chills, extreme fatigue, dry cough, sore throat, and headache. Vomiting and diarrhea can also occur, especially in children.</li>
+                    <li>Home Care: Prioritize rest, ensure continuous fluid intake to prevent dehydration, and use fever reducers (acetaminophen or ibuprofen) as directed by your pediatrician. Tamiflu or other antiviral medications may be prescribed if caught early.</li>
+                    <li>When to Call Doctor: Difficulty breathing or shortness of breath, bluish skin color, severe or persistent vomiting, signs of dehydration (e.g., no tears when crying, infrequent urination), seizures, or worsening of chronic medical conditions.</li>
+                </ul>
+
+                <h2 class="text-3xl font-semibold text-blue-600 mb-4">Fever</h2>
+                <p class="mb-4">
+                    A fever is a temporary increase in body temperature, typically a sign that the body is fighting an infection. While often harmless, it's important to monitor a child's fever and associated symptoms.
+                </p>
+                <ul class="list-disc list-inside space-y-2 mb-6 ml-4">
+                    <li>Home Care: Keep the child comfortable, not overdressed. Offer plenty of fluids. Administer fever reducers (acetaminophen or ibuprofen) according to dosage instructions based on age and weight, never exceeding recommended amounts. A lukewarm sponge bath can also help.</li>
+                    <li>**When to Call Doctor:
+                        <ul class="list-circle list-inside ml-6">
+                            <li>Infants under 3 months: Any rectal temperature of 100.4°F (38°C) or higher requires immediate medical attention.</li>
+                            <li>Children 3-6 months: Fever of 102°F (38.9°C) or higher, or any fever accompanied by unusual irritability or lethargy.</li>
+                            <li>Children over 6 months: Fever over 103°F (39.4°C), or lower fever with severe symptoms like stiff neck, severe headache, rash, or difficulty breathing.</li>
+                            <li>Fever lasts more than 24-48 hours (for children under 2 years) or more than 72 hours (for older children) without a clear cause.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h2 class="text-3xl font-semibold text-blue-600 mb-4">Stomach Flu (Gastroenteritis)</h2>
+                <p class="mb-4">
+                    Gastroenteritis, commonly known as stomach flu, is an inflammation of the stomach and intestines, usually caused by a viral infection. It leads to vomiting and diarrhea.
+                </p>
+                <ul class="list-disc list-inside space-y-2 mb-6 ml-4">
+                    <li>Symptoms: Nausea, vomiting, diarrhea (often watery), abdominal cramps, low-grade fever, and general malaise.</li>
+                    <li>Home Care: The primary concern is preventing dehydration. Offer small, frequent sips of oral rehydration solutions (ORS), water, or clear broths. Avoid sugary drinks. Gradually reintroduce bland foods like toast, bananas, rice, and applesauce.</li>
+                    <li>When to Call Doctor: Signs of dehydration (dry mouth, no tears, sunken eyes, infrequent urination), persistent vomiting (unable to keep fluids down), severe abdominal pain, bloody or black stools, high fever, or symptoms lasting longer than a few days.</li>
+                </ul>
+
+                <h2 class="text-3xl font-semibold text-blue-600 mb-4">Ear Infections (Otitis Media)</h2>
+                <p class="mb-4">
+                    Ear infections are common in children, often occurring after a cold or other respiratory infection. They are typically caused by bacteria or viruses in the middle ear.
+                </p>
+                <ul class="list-disc list-inside space-y-2 mb-6 ml-4">
+                    <li>Symptoms: Ear pain (tugging or pulling at ears in infants), fussiness, crying, difficulty sleeping, fever, fluid draining from the ear, and sometimes temporary hearing loss.</li>
+                    <li>**Home Care:** Pain relief with acetaminophen or ibuprofen (as directed by doctor). A warm compress over the ear might provide comfort.</li>
+                    <li>When to Call Doctor: Symptoms of an ear infection, especially if accompanied by a high fever, severe pain, fluid draining from the ear, or if symptoms do not improve within 24-48 hours. Recurrent ear infections should also be discussed with a pediatrician.</li>
+                </ul>
+
+                <h2 class="text-3xl font-semibold text-blue-600 mb-4">Allergies</h2>
+                <p class="mb-4">
+                    Childhood allergies occur when the immune system overreacts to a normally harmless substance (allergen). These can range from seasonal allergies (pollen) to food allergies (peanuts, milk, eggs).
+                </p>
+                <ul class="list-disc list-inside space-y-2 mb-6 ml-4">
+                    <li>Symptoms:
+                        <ul class="list-circle list-inside ml-6">
+                            <li>Seasonal/Environmental:** Sneezing, runny nose, itchy/watery eyes, nasal congestion, cough.</li>
+                            <li>Food: Hives, swelling (lips, face, tongue), vomiting, diarrhea, abdominal pain, difficulty breathing, wheezing, dizziness.</li>
+                        </ul>
+                    </li>
+                    <li>Management: The best management is to identify and avoid triggers. Antihistamines or nasal sprays may be prescribed for seasonal allergies. For food allergies, strict avoidance is key, and an emergency plan (e.g., EpiPen) for severe reactions is crucial.</li>
+                    <li>When to Call Doctor:** Suspected new allergy, worsening allergic symptoms despite home care, or any signs of a severe allergic reaction (anaphylaxis - characterized by widespread hives, swelling, difficulty breathing, dizziness, or collapse). **For anaphylaxis, call emergency services immediately.</li>
+                </ul>
+
+                <p class="italic text-gray-600 border-l-4 border-blue-400 pl-4 py-2 mt-8">
+                    Disclaimer: This information is for general guidance only and should not replace professional medical advice. Always consult with your pediatrician or a qualified healthcare provider for diagnosis, treatment, and personalized health concerns related to your child.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 text-center rounded-t-lg">
+        <div class="container mx-auto px-4">
+            <p class="text-lg mb-2">&copy; 2025 Children's Health Hub. All rights reserved.</p>
+            <ul class="flex justify-center space-x-6 text-sm">
+                <li><a href="#" class="hover:text-blue-400 transition duration-300">Privacy Policy</a></li>
+                <li><a href="#" class="hover:text-blue-400 transition duration-300">Terms of Service</a></li>
+                <li><a href="#" class="hover:text-blue-400 transition duration-300">Disclaimer</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html

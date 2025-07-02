@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition - Children's Health Hub</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+            color: #334155; /* Slate-700 for main text */
+            line-height: 1.6;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #cbd5e1; /* Light gray track */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #64748b; /* Medium gray thumb */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569; /* Darker gray on hover */
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 767px) {
+            .container {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+            .text-4xl {
+                font-size: 2.5rem; /* Slightly smaller for mobile */
+            }
+            .text-3xl {
+                font-size: 2rem;
+            }
+            .text-lg {
+                font-size: 1rem;
+            }
+            .space-x-6 > li {
+                margin-left: 0 !important; /* Reset horizontal spacing */
+                margin-top: 0.5rem; /* Add vertical spacing */
+            }
+            .flex-wrap-nav {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .prose {
+                padding: 0.5rem; /* Adjust padding for content */
+            }
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-md py-4 sticky top-0 z-50 rounded-b-lg">
+        <nav class="container mx-auto px-4 flex flex-col sm:flex-row justify-between items-center">
+            <a href="index.html" class="text-3xl font-bold text-blue-600 rounded-md p-2 hover:bg-blue-50 transition duration-300 mb-2 sm:mb-0">
+                <span class="text-green-500">Kids</span>Health
+            </a>
+            <ul class="flex flex-wrap justify-center space-x-4 sm:space-x-6">
+                <li><a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300 rounded-md p-2 hover:bg-gray-100">Home</a></li>
+                <li><a href="nutrition.html" class="text-blue-600 hover:text-blue-600 font-medium transition duration-300 rounded-md p-2 bg-blue-50">Nutrition</a></li>
+                <li><a href="vaccinations.html" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300 rounded-md p-2 hover:bg-gray-100">Vaccinations</a></li>
+                <li><a href="development.html" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300 rounded-md p-2 hover:bg-gray-100">Development</a></li>
+                <li><a href="common-illnesses.html" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300 rounded-md p-2 hover:bg-gray-100">Illnesses</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        <section class="bg-white p-10 rounded-xl shadow-lg mb-12">
+            <h1 class="text-4xl font-bold text-center text-gray-800 mb-8">Healthy Eating for Kids: A Comprehensive Guide</h1>
+            <div class="prose max-w-none text-lg text-gray-700">
+                <p class="mb-6">
+                    Good nutrition is the cornerstone of a child's healthy growth and development. Providing a balanced diet from an early age helps build strong bones, boosts immunity, supports cognitive function, and establishes lifelong healthy eating habits. It's about offering a variety of foods that provide essential vitamins, minerals, protein, and energy for their active lives.
+                </p>
+
+                <img src="pexels-alex-green-5692220.jpg" alt="Healthy Food for Kids" class="w-full rounded-lg shadow-md mb-8">
+
+                <h2 class="text-3xl font-semibold text-blue-600 mb-4">Understanding Essential Food Groups</h2>
+                <p class="mb-4">
+                    A balanced diet for children should thoughtfully include foods from all major food groups to ensure they receive a wide spectrum of nutrients:
+                </p>
+                <ul class="list-disc list-inside space-y-2 mb-6 ml-4">
+                    <li>Fruits and Vegetables: These are powerhouses of vitamins, minerals, and dietary fiber. Encourage a colorful variety to ensure a broad range of nutrients. Think berries, apples, leafy greens, carrots, and broccoli.</li>
+                    <li>Grains: Provide the primary source of energy for growing bodies. Prioritize whole grains like whole wheat bread, brown rice, oats, and quinoa over refined grains.</li>
+                    <li>Protein Foods: Crucial for building and repairing tissues, and for overall growth. Include lean meats, poultry, fish (rich in Omega-3s), beans, lentils, peas, nuts (if no allergies), and eggs.</li>
+                    <li>Dairy (or Fortified Alternatives): Important for calcium and Vitamin D, vital for strong bones and teeth. Milk, yogurt, and cheese are excellent choices. For those with dairy sensitivities, fortified plant-based milks (almond, soy, oat) can be suitable.</li>
+                    <li>Healthy Fats: Essential for brain development and absorption of fat-soluble vitamins. Found in avocados, nuts, seeds, and olive oil.</li>
+                </ul>
+
+                <h2 class="text-3xl font-semibold text-blue-600 mb-4">Nutrition at Different Stages</h2>
+
+                <h3 class="text-2xl font-semibold text-gray-700 mb-3 mt-6">Infants (0-12 Months)</h3>
+                <p class="mb-4">
+                    For the first six months, breast milk or formula provides all the necessary nutrition. Around 6 months, introduce solid foods gradually, starting with single-grain cereals, pureed fruits, vegetables, and then meats. Focus on iron-fortified foods.
+                </p>
+                <ul class="list-disc list-inside space-y-2 mb-6 ml-4">
+                    <li>0-6 Months: Exclusive breastfeeding or formula feeding.</li>
+                    <li>6-9 Months: Introduce iron-fortified cereals, pureed single-ingredient fruits, vegetables, and meats.</li>
+                    <li>9-12 Months: Introduce mashed or finely chopped foods, finger foods, and a wider variety of textures.</li>
+                </ul>
+
+                <h3 class="text-2xl font-semibold text-gray-700 mb-3 mt-6">Toddlers (1-3 Years)</h3>
+                <p class="mb-4">
+                    Toddlers are exploring new tastes and textures. Offer three meals and two to three healthy snacks daily. Encourage self-feeding and offer a variety of foods from all food groups.
+                </p>
+                <ul class="list-disc list-inside space-y-2 mb-6 ml-4">
+                    <li>Offer small, frequent meals and snacks.</li>
+                    <li>Continue offering a wide variety of fruits, vegetables, whole grains, and proteins.</li>
+                    <li>Limit sugary drinks and processed foods.</li>
+                </ul>
+
+                <h3 class="text-2xl font-semibold text-gray-700 mb-3 mt-6">Preschoolers and School-Aged Children (3+ Years)</h3>
+                <p class="mb-4">
+                    As children grow, their nutritional needs evolve. Focus on portion control, healthy choices, and involving them in meal preparation.
+                </p>
+                <ul class="list-disc list-inside space-y-2 mb-6 ml-4">
+                    <li>Teach them about healthy choices and the importance of balanced meals.</li>
+                    <li>Encourage them to drink water instead of sugary beverages.</li>
+                    <li>Limit screen time during meals and eat together as a family.</li>
+                    <li>Pack healthy lunches and snacks for school.</li>
+                </ul>
+
+                <h2 class="text-3xl font-semibold text-blue-600 mb-4">Practical Tips for Managing Picky Eaters</h2>
+                <p class="mb-4">
+                    Many children go through phases of picky eating, which can be frustrating for parents. Here are some effective strategies to encourage healthy eating habits without battles:
+                </p>
+                <ul class="list-disc list-inside space-y-2 mb-6 ml-4">
+                    <li>Involve Them in the Process: Let children help with meal planning, grocery shopping, or preparing simple dishes. When they have a hand in it, they're more likely to eat it.</li>
+                    <li>Offer Choices, Not Demands: Instead of "Eat your broccoli," try "Would you like carrots or broccoli tonight?" This gives them a sense of control.</li>
+                    <li>Be Patient and Persistent: It can take 10-15 exposures for a child to accept a new food. Don't give up after the first try. Offer small portions.</li>
+                    <li>Lead by Example: Children are highly observant. They are more likely to try new foods if they consistently see their parents and other family members enjoying them.</li>
+                    <li>Make it Fun and Appealing: Cut food into fun shapes, create colorful plates, or give foods silly names. Presentation can make a big difference.</li>
+                    <li>Stick to a Routine: Regular meal and snack times help children anticipate when they will eat, reducing grazing and increasing hunger at mealtimes.</li>
+                    <li>**Don't Force It:** Avoid pressuring children to eat. This can create negative associations with food.</li>
+                </ul>
+
+                <h2 class="text-3xl font-semibold text-blue-600 mb-4">The Importance of Hydration</h2>
+                <p class="mb-6">
+                    Water is absolutely essential for children's overall health, impacting everything from energy levels to concentration and digestion. Encourage them to drink plenty of water throughout the day, especially during active play and in warm weather. Limit sugary drinks like soda, fruit juices with added sugar, and sports drinks, as these contribute to excess sugar intake and can lead to dental issues and weight gain.
+                </p>
+
+                <h2 class="text-3xl font-semibold text-blue-600 mb-4">Addressing Food Allergies and Sensitivities</h2>
+                <p class="mb-6">
+                    Be aware of common food allergens (e.g., peanuts, tree nuts, milk, eggs, soy, wheat, fish, shellfish) and any sensitivities your child may have. If you suspect an allergy, consult your pediatrician for proper testing and management. Early introduction of common allergens under medical guidance may be recommended to prevent allergies in some cases.
+                </p>
+
+                <p class="italic text-gray-600 border-l-4 border-blue-400 pl-4 py-2">
+                    Disclaimer: This information is for general guidance only and should not replace professional medical advice. Always consult with your pediatrician or a registered dietitian for personalized dietary advice, especially for children with specific health conditions, allergies, or dietary restrictions. This information is for general guidance only.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 text-center rounded-t-lg">
+        <div class="container mx-auto px-4">
+            <p class="text-lg mb-2">&copy; 2025 Children's Health Hub. All rights reserved.</p>
+            <ul class="flex justify-center space-x-6 text-sm">
+                <li><a href="#" class="hover:text-blue-400 transition duration-300">Privacy Policy</a></li>
+                <li><a href="#" class="hover:text-blue-400 transition duration-300">Terms of Service</a></li>
+                <li><a href="#" class="hover:text-blue-400 transition duration-300">Disclaimer</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

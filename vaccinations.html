@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaccinations - Children's Health Hub</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+            color: #334155; /* Slate-700 for main text */
+            line-height: 1.6;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #cbd5e1; /* Light gray track */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #64748b; /* Medium gray thumb */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569; /* Darker gray on hover */
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 767px) {
+            .container {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+            .text-4xl {
+                font-size: 2.5rem; /* Slightly smaller for mobile */
+            }
+            .text-3xl {
+                font-size: 2rem;
+            }
+            .text-lg {
+                font-size: 1rem;
+            }
+            .space-x-6 > li {
+                margin-left: 0 !important; /* Reset horizontal spacing */
+                margin-top: 0.5rem; /* Add vertical spacing */
+            }
+            .flex-wrap-nav {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .prose {
+                padding: 0.5rem; /* Adjust padding for content */
+            }
+            .overflow-x-auto table {
+                min-width: 600px; /* Ensure table has a minimum width to enable scrolling */
+            }
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-md py-4 sticky top-0 z-50 rounded-b-lg">
+        <nav class="container mx-auto px-4 flex flex-col sm:flex-row justify-between items-center">
+            <a href="index.html" class="text-3xl font-bold text-blue-600 rounded-md p-2 hover:bg-blue-50 transition duration-300 mb-2 sm:mb-0">
+                <span class="text-green-500">Kids</span>Health
+            </a>
+            <ul class="flex flex-wrap justify-center space-x-4 sm:space-x-6">
+                <li><a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300 rounded-md p-2 hover:bg-gray-100">Home</a></li>
+                <li><a href="nutrition.html" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300 rounded-md p-2 hover:bg-gray-100">Nutrition</a></li>
+                <li><a href="vaccinations.html" class="text-blue-600 hover:text-blue-600 font-medium transition duration-300 rounded-md p-2 bg-blue-50">Vaccinations</a></li>
+                <li><a href="development.html" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300 rounded-md p-2 hover:bg-gray-100">Development</a></li>
+                <li><a href="common-illnesses.html" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300 rounded-md p-2 hover:bg-gray-100">Illnesses</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        <section class="bg-white p-10 rounded-xl shadow-lg mb-12">
+            <h1 class="text-4xl font-bold text-center text-gray-800 mb-8">Childhood Vaccinations: Protecting Your Child and Community</h1>
+            <div class="prose max-w-none text-lg text-gray-700">
+                <p class="mb-6">
+                    Vaccinations are one of the most significant public health achievements, effectively protecting children from serious, and potentially life-threatening, infectious diseases. They work by safely exposing the body's immune system to a weakened or inactive form of a virus or bacteria, allowing it to develop antibodies and memory cells without causing the actual illness. This preparation enables the immune system to quickly recognize and fight off future infections.
+                </p>
+
+                <img src="pexels-pavel-danilyuk-7653328.jpg" alt="Child Vaccination" class="w-full rounded-lg shadow-md mb-8">
+
+                <h2 class="text-3xl font-semibold text-blue-600 mb-4">The Critical Importance of Vaccinations</h2>
+                <ul class="list-disc list-inside space-y-2 mb-6 ml-4">
+                    <li>Individual Disease Prevention: Vaccines directly prevent illnesses like measles, mumps, rubella, polio, tetanus, diphtheria, pertussis (whooping cough), hepatitis, and many more. This significantly reduces a child's risk of severe symptoms, hospitalization, and long-term complications.</li>
+                    <li>Community Immunity (Herd Immunity): When a large percentage of the population is vaccinated, it creates a protective barrier, making it difficult for infectious diseases to spread. This "herd immunity" protects vulnerable individuals who cannot be vaccinated (e.g., infants too young for certain vaccines, people with compromised immune systems, or those with severe allergies to vaccine components).</li>
+                    <li>Safety and Efficacy: Vaccines undergo rigorous testing and monitoring by health authorities worldwide (e.g., CDC, WHO) through multiple phases of clinical trials before they are approved for use. Ongoing surveillance ensures their continued safety and effectiveness.</li>
+                    <li>Eradication of Diseases: Vaccines have led to the eradication of smallpox and have brought polio to the brink of eradication globally, demonstrating their immense power in public health.</li>
+                </ul>
+
+                <h2 class="text-3xl font-semibold text-blue-600 mb-4">Understanding the Common Vaccination Schedule</h2>
+                <p class="mb-4">
+                    Vaccination schedules are carefully designed by medical experts to provide optimal protection at specific ages, taking into account when a child's immune system is ready and when they are most vulnerable to certain diseases. It's crucial to adhere to the recommended schedule.
+                </p>
+                <p class="mb-4">
+                    Please note: Vaccination schedules can vary by country, region, and individual child's health needs. Always follow the specific recommendations of your local health authority (e.g., CDC in the US, NHS in the UK) and, most importantly, your child's pediatrician. Below is a general example of common vaccines and typical ages:
+                </p>
+                <div class="overflow-x-auto mb-6">
+                    <table class="min-w-full bg-white border border-gray-300 rounded-lg shadow-sm">
+                        <thead>
+                            <tr class="bg-blue-100 text-blue-800">
+                                <th class="py-3 px-4 border-b text-left whitespace-nowrap">Age</th>
+                                <th class="py-3 px-4 border-b text-left">Vaccine(s)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-3 px-4 border-b border-gray-200 whitespace-nowrap">Birth</td>
+                                <td class="py-3 px-4 border-b border-gray-200">Hepatitis B (HepB) - 1st Dose</td>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <td class="py-3 px-4 border-b border-gray-200 whitespace-nowrap">2 Months</td>
+                                <td class="py-3 px-4 border-b border-gray-200">DTaP (Diphtheria, Tetanus, Pertussis), Hib (Haemophilus influenzae type b), IPV (Polio), PCV13 (Pneumococcal), Rotavirus, HepB (2nd Dose)</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 border-b border-gray-200 whitespace-nowrap">4 Months</td>
+                                <td class="py-3 px-4 border-b border-gray-200">DTaP, Hib, IPV, PCV13, Rotavirus</td>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <td class="py-3 px-4 border-b border-gray-200 whitespace-nowrap">6 Months</td>
+                                <td class="py-3 px-4 border-b border-gray-200">DTaP, Hib, IPV, PCV13, HepB (3rd Dose), Flu (seasonal, annually thereafter)</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 border-b border-gray-200 whitespace-nowrap">12-18 Months</td>
+                                <td class="py-3 px-4 border-b border-gray-200">MMR (Measles, Mumps, Rubella), Varicella (Chickenpox), HepA (Hepatitis A - 1st Dose), DTaP, Hib, PCV13</td>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <td class="py-3 px-4 border-b border-gray-200 whitespace-nowrap">4-6 Years</td>
+                                <td class="py-3 px-4 border-b border-gray-200">DTaP, IPV, MMR, Varicella, HepA (2nd Dose)</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 border-b border-gray-200 whitespace-nowrap">11-12 Years</td>
+                                <td class="py-3 px-4 border-b border-gray-200">Tdap (Tetanus, Diphtheria, Pertussis booster), Meningococcal, HPV (Human Papillomavirus)</td>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <td class="py-3 px-4 border-b border-gray-200 whitespace-nowrap">16 Years</td>
+                                <td class="py-3 px-4 border-b border-gray-200">Meningococcal booster</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h2 class="text-3xl font-semibold text-blue-600 mb-4">Common Side Effects and What to Expect</h2>
+                <p class="mb-4">
+                    Vaccines are very safe, but like any medication, they can have side effects. Most are mild and temporary:
+                </p>
+                <ul class="list-disc list-inside space-y-2 mb-6 ml-4">
+                    <li>Mild Side Effects: Soreness, redness, or swelling at the injection site; low-grade fever; fussiness; tiredness. These typically resolve within a day or two.</li>
+                    <li>Managing Mild Side Effects: Apply a cool, damp cloth to the injection site. Give a non-aspirin pain reliever (like acetaminophen or ibuprofen) if recommended by your pediatrician.</li>
+                    <li>Serious Side Effects: Very rare, but can include allergic reactions. Your healthcare provider is prepared to handle these.</li>
+                </ul>
+
+                <h2 class="text-3xl font-semibold text-blue-600 mb-4">Addressing Common Concerns About Vaccines</h2>
+                <p class="mb-6">
+                    It's natural for parents to have questions about their child's health and medical procedures. If you have concerns about vaccines, it's important to discuss them openly and honestly with your pediatrician. They are the best source for accurate, evidence-based information and can address any myths or misunderstandings you may encounter. Reliable sources like the Centers for Disease Control and Prevention (CDC) and the World Health Organization (WHO) also provide extensive, trustworthy information.
+                </p>
+                <ul class="list-disc list-inside space-y-2 mb-6 ml-4">
+                    <li>Vaccine Safety: Vaccines are rigorously tested and continuously monitored for safety. Serious side effects are rare.</li>
+                    <li>Autism Myth: Extensive scientific research has definitively shown no link between vaccines and autism.</li>
+                    <li>Overloading Immune System: A child's immune system is incredibly robust and capable of handling multiple vaccines. They are exposed to far more antigens from their daily environment than from vaccines.</li>
+                </ul>
+
+                <h2 class="text-3xl font-semibold text-blue-600 mb-4">Keeping Up-to-Date with Immunizations</h2>
+                <p class="mb-4">
+                    It's vital to keep a record of your child's immunizations. Most pediatricians will provide an immunization card or record. Ensure your child receives all recommended doses at the appropriate times to maintain full protection. If you miss a dose, contact your pediatrician to get back on schedule; it's rarely necessary to restart a vaccine series.
+                </p>
+                <p class="mb-6">
+                    Regular well-child visits are essential opportunities to discuss your child's vaccination status and any new recommendations with your healthcare provider.
+                </p>
+
+                <p class="italic text-gray-600 border-l-4 border-blue-400 pl-4 py-2">
+                    Disclaimer: This information is for general guidance only and should not replace professional medical advice. Always consult with your pediatrician for the most up-to-date and personalized vaccination schedule and advice for your child, especially concerning any specific health conditions or concerns.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 text-center rounded-t-lg">
+        <div class="container mx-auto px-4">
+            <p class="text-lg mb-2">&copy; 2025 Children's Health Hub. All rights reserved.</p>
+            <ul class="flex justify-center space-x-6 text-sm">
+                <li><a href="#" class="hover:text-blue-400 transition duration-300">Privacy Policy</a></li>
+                <li><a href="#" class="hover:text-blue-400 transition duration-300">Terms of Service</a></li>
+                <li><a href="#" class="hover:text-blue-400 transition duration-300">Disclaimer</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
